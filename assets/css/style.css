@@ -1,0 +1,57 @@
+body{
+    background-color: #D3C8C4;
+}
+.navbar{
+    width: 100%;
+}
+a.navbar-brand{
+    color: #F9F4EA !important;
+    text-decoration: none;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    letter-spacing: -0.16em;
+    font-size: 72px;
+}
+.navbar, .navbar-expand-lg, .navbar-light, .bg-transparent{
+    background-color: #212529;
+}
+.navbar-light, .navbar-nav, .nav-link{
+    color: #F9F4EA!important;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    font-size: 31px;
+}
+
+.navbar-light, .navbar-nav, .nav-link:hover{
+    color: #EF4904 !important;
+}
+
+.collapse, .navbar-collapse{
+    justify-content: center;
+}
+
+a.nav-link{
+    margin: 0px 20px;
+}
+
+.social{
+    display: flex;
+}
+
+.social a img{
+    margin: 0px 10px;
+}
+
+.navbar-toggler{
+    background-color: blanchedalmond !important;
+}
+
+.carousel, .slide{
+    box-sizing: border-box;
+}
+
+.slider{
+    height: 300px;
+}
+
+
