@@ -5,85 +5,186 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>iCook</title>
-
     <link rel="stylesheet" href="assets/css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
 </head>
 
 <body>
     <header class="header">
-        <div class="navbar">
-            <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
-                <div class="container-fluid">
-                  <a class="navbar-brand" href="#">iCook</a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav">
-                      <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">Home</a>
-                      </li>
-                      <li class="nav-item">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="index.html">iCook</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#story">Home <span class="sr-only"></span></a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="#">Features</a>
-                      </li>
-                      <li class="nav-item">
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="#">Pricing</a>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="social">
-                      <a href=""><img src="img/facebook.svg" alt=""></a>
-                      <a href=""><img src="img/instagram.svg" alt=""></a>
-                  </div>
-                </div>
-              </nav>
-        </div>
-        <div class="slider">
-            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="img/home.jpg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h1>Wellcome to iCook</h1>
-                            <h4>Nulla vitae elit libero, a pharetra augue mollis interdum.</h4>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="img/daniil-silantev-Tmt_OyFga0Y-unsplash.jpg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h1>The best recipes</h1>
-                            <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="img/anshu-a-LDm_O28w34w-unsplash.jpg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h1>Third slide label</h1>
-                            <h4>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</h4>
-                        </div>
-                    </div>
-                </div>
-                <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </a>
+                    </li>
+                </ul>
             </div>
+            <div class="social">
+                <a href=""><img src="img/facebook.svg" alt=""></a>
+                <a href=""><img src="img/instagram.svg" alt=""></a>
+            </div>
+        </nav>
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/home.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/andra-ion-DBFQJI5HO3c-unsplash.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/hue12-photography-8rTwokBwz1w-unsplash.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/hue12-photography-8rTwokBwz1w-unsplash.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1>Third slide label</h1>
+                        <h4>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</h4>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
         </div>
     </header>
     <section>
-        
+        <div class="our-story" id="story">
+            <h1>Our Story</h1>
+            <p class="icook-story">
+                <b>iCook</b> began life in beatiful <b>Bălți</b> city, Republic of Moldova. The bussines was founder by
+                <b>Gușan Veronica, Gușan Anastasia</b> and <b>Gușan Inga</b>, three sister who shared a passion for
+                cooking. They thought it would be col create their own website and publish there all the recipes they
+                prepared. In this way, people will be able to visit this site, find recipes that interest them and use
+                them. <br>
+                iCook rally is the most wonderful material to cook with. Whatever ypur skill level, a few basic
+                ingredients added to stock and left to infuse in the oven for an four or so will virtually guarantee a
+                delicious meal.
+            </p>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <img class="img-story" src="img/nastea1.jpg" alt="">
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <img class="img-story" src="img/veronica.png" alt="">
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <img class="img-story" src="img/inga.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
-    </script>
+    <section>
+        <div class="Recipes">
+            <h1>Recipes</h1>
+            <div class="container">
+                <div class="row">
+                    <div class="cards col-sm-12 col-md-6 col-lg-4">
+                        <div class="card">
+                            <img src="img/roasted-broccoli.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Garlicky, Lemony Roastder Broccoli</p>
+                            </div>
+                            <div class="minute">
+                                <img src="img/clock.svg" alt="">
+                                <p>35min</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cards col-sm-12 col-md-6 col-lg-4">
+                        <div class="card">
+                            <img src="img/apple-tart.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Apple tart</p>
+                            </div>
+                            <div class="minute">
+                                <img src="img/clock.svg" alt="">
+                                <p>90min</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cards col-sm-12 col-md-6 col-lg-4">
+                        <div class="card">
+                            <img src="img/instant-pot-pho-1.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Instant Pot Pho</p>
+                            </div>
+                            <div class="minute">
+                                <img src="img/clock.svg" alt="">
+                                <p>135min</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cards col-sm-12 col-md-6 col-lg-4">
+                        <div class="card">
+                            <img src="img/gnocchi.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Cacio e Pepe Potato Gnocchi</p>
+                            </div>
+                            <div class="minute">
+                                <img src="img/clock.svg" alt="">
+                                <p>105min</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cards col-sm-12 col-md-6 col-lg-4">
+                        <div class="card">
+                            <img src="img/backed-potato.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">How To Microware A Baked Potato</p>
+                            </div>
+                            <div class="minute">
+                                <img src="img/clock.svg" alt="">
+                                <p>15min</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cards col-sm-12 col-md-6 col-lg-4">
+                        <div class="card">
+                            <img src="img/hot-dog.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Deep Fried Hot Dogs</p>
+                            </div>
+                            <div class="minute">
+                                <img src="img/clock.svg" alt="">
+                                <p>30min</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 </body>
 
 </html>

@@ -1,18 +1,18 @@
 body{
-    background-color: #D3C8C4;
+    background-color: #F9F4EA!important;
 }
 .navbar{
     width: 100%;
 }
 a.navbar-brand{
-    color: #F9F4EA !important;
+    color: #D3C8C4 !important;
     text-decoration: none;
     font-family: 'Quicksand', sans-serif;
     font-weight: bold;
     letter-spacing: -0.16em;
     font-size: 72px;
 }
-.navbar, .navbar-expand-lg, .navbar-light, .bg-transparent{
+.navbar, .navbar-expand-lg, .navbar-light{
     background-color: #212529;
 }
 .navbar-light, .navbar-nav, .nav-link{
@@ -43,15 +43,8 @@ a.nav-link{
 }
 
 .navbar-toggler{
-    background-color: blanchedalmond !important;
+    background-color: #F9F4EA !important;
 }
 
-.carousel, .slide{
-    box-sizing: border-box;
-}
-
-.slider{
-    height: 300px;
-}
 
 
