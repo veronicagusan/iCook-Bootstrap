@@ -1,10 +1,12 @@
-body{
-    background-color: #F9F4EA!important;
+body {
+    background-color: #F9F4EA !important;
 }
-.navbar{
+
+.navbar {
     width: 100%;
 }
-a.navbar-brand{
+
+a.navbar-brand {
     color: #D3C8C4 !important;
     text-decoration: none;
     font-family: 'Quicksand', sans-serif;
@@ -12,39 +14,104 @@ a.navbar-brand{
     letter-spacing: -0.16em;
     font-size: 72px;
 }
-.navbar, .navbar-expand-lg, .navbar-light{
+
+.navbar,
+.navbar-expand-lg,
+.navbar-light {
     background-color: #212529;
 }
-.navbar-light, .navbar-nav, .nav-link{
-    color: #F9F4EA!important;
+
+.navbar-light,
+.navbar-nav,
+.nav-link {
+    color: #F9F4EA !important;
     font-family: 'Quicksand', sans-serif;
     font-weight: bold;
     font-size: 31px;
 }
 
-.navbar-light, .navbar-nav, .nav-link:hover{
+.navbar-light,
+.navbar-nav,
+.nav-link:hover {
     color: #EF4904 !important;
 }
 
-.collapse, .navbar-collapse{
+.collapse,
+.navbar-collapse {
     justify-content: center;
 }
 
-a.nav-link{
+a.nav-link {
     margin: 0px 20px;
 }
 
-.social{
+.social {
     display: flex;
 }
 
-.social a img{
+.social a img {
     margin: 0px 10px;
 }
 
-.navbar-toggler{
+.navbar-toggler {
     background-color: #F9F4EA !important;
 }
 
+.carousel-inner {
+    max-height: 600px;
+}
 
+@media only screen and (min-width: 1200px) {
+    img.d-block.w-100 {
+        transform: translateY(-30%) !important;
+    }
+}
 
+.our-story {
+    width: 70%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    text-align: center;
+    color: #686666;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    padding: 5% 0 2% 0;
+}
+
+.icook-story {
+    font-size: 20px;
+    color: #686666;
+    font-family: 'Quicksand', sans-serif;
+    padding: 0px 10% 0 10%;
+}
+
+.img-story {
+    width: 100%;
+}
+
+.card {
+    width: 100%;
+    background-color: white;
+    padding: 30px;
+    height: 450px;
+    margin-bottom: 30px;
+    border: none !important;
+}
+
+.cards :hover {
+    box-shadow: 1px 1px 10px #A7A6A6 !important;
+}
+
+.minute {
+    display: flex;
+    justify-content: space-between;
+    height: 30px;
+    align-items: baseline;
+    margin-top: 30px;
+    width: 90%;
+    margin: auto
+}
