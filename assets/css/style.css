@@ -106,13 +106,14 @@ h1 {
 .card {
     width: 100%;
     padding: 30px 30px 0px 30px;
-    height: 450px;
+    height: 500px;
     border: none !important;
     margin-bottom: 30px;
 }
 
 .card-body {
     padding-left: 0 !important;
+    padding-bottom: 0 !important;
 }
 
 p.card-text {
@@ -126,7 +127,7 @@ p.card-text {
     justify-content: space-between;
     height: 30px;
     align-items: center;
-    margin-top: 30px auto auto 0;
+    margin-top: 10px;
     width: 90%;
 }
 
@@ -145,7 +146,7 @@ a.card-link {
 }
 
 button {
-    margin-bottom: 10px !important;
+    margin-bottom: 20px !important;
     margin-top: 10px !important;
 }
 
@@ -188,4 +189,18 @@ ol li::before {
 
 .modal-body{
     font-family: 'Quicksand', sans-serif;
+}
+
+.container{
+    align-items: center;
+}
+
+.form-floating{
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+.form-label{
+    padding-left: 0px !important;
+    padding-top: 1rem;
 }
