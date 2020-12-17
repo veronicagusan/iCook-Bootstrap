@@ -95,7 +95,7 @@ h1 {
     width: 100%;
 }
 
-.cards{
+.cards {
     padding-right: 0 !important;
 }
 
@@ -111,7 +111,7 @@ h1 {
     margin-bottom: 30px;
 }
 
-.card-body{
+.card-body {
     padding-left: 0 !important;
 }
 
@@ -131,15 +131,58 @@ p.card-text {
 }
 
 
-.time-prep p{
-    margin-bottom: 0 !important; 
+.time-prep p {
+    margin-bottom: 0 !important;
     color: #A7A6A6;
     font-family: 'Quicksand', sans-serif;
     font-size: 20px;
 }
 
-a.card-link{
+a.card-link {
     padding: 10px 0;
     text-align: left;
 }
 
+button {
+    margin-top: 10px !important;
+}
+
+.btn-primary {
+    background-color: #686666 !important;
+    border-color: #686666 !important;
+}
+
+@media (min-width: 576px) {
+    .modal-dialog {
+        max-width: 700px !important;
+    }
+}
+
+/*https://webformyself.com/stilizaciya-markerov-spiska-v-css/*/
+
+ol {
+    list-style: none;
+    counter-reset: my-awesome-counter;
+}
+
+ol li {
+    counter-increment: my-awesome-counter;
+    width: 100%;
+}
+
+ol li::before {
+    content: counter(my-awesome-counter);
+    background: #686666;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    display: inline-block;
+    line-height: 2rem;
+    color: white;
+    text-align: center;
+    margin-right: 0.5rem;
+}
+
+.modal-body{
+    font-family: 'Quicksand', sans-serif;
+}
